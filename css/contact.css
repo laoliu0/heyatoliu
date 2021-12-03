@@ -1,0 +1,139 @@
+/* footer上面的联系我们部分 */
+.contact{
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    overflow: hidden;
+}
+.process-foot{
+    height: 100px;
+    width: 1500px;
+    /* background-color: red; */
+    margin: 50px auto;
+    margin-top: 150px;
+
+}
+.foot-list{
+    width: 300px;
+    height: 100px;
+    border-right: 1px solid #4d4d4d;
+    float: left;
+    padding:0px  113px ;
+}
+.foot-list.last{
+    padding-right: 0;
+    border-right: none;
+}
+.foot-list p{
+        color: #8c8c8c;
+        font-size: 14px;
+        line-height: 36px;
+}
+
+/* 中间区域的设置 */
+.title{
+    width: 550px;
+    height: 167px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 110px;
+    overflow: hidden;
+
+
+}
+.title .en{
+    display: inline-block;
+    height: 24px;
+    color: #dd1717;
+    font-size: 24px;
+    margin: 0 20px;
+
+}
+.title .ch{
+    color: #8c8c8c;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+
+.main{
+    height: 850px;
+    width: 100%;
+    background-color: #161616;
+    overflow: hidden;
+}
+.main-c{
+    margin: 0 auto;
+    width: 1000px;
+    height: 750px;
+}
+.main-c .intro{
+    float: left;
+    height: 575px;
+    width: 465px;
+    position: relative;
+}
+.main-c .intro .logo1-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main-c .intro .logo1-2{
+    position: absolute;
+    top:5px;
+    left: 50px;
+}
+.main-c .intro .font1{
+    width: 285px;
+    height: 135px;
+    margin-top: 80px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+}
+.main-c .intro .font1 span{
+    color: #dd1717;
+}
+
+
+
+
+
+.main-c .fill{
+    width: 535px;
+    height: 575px;
+    float: right;
+    position: relative;
+}
+.main-c .fill label{
+    color: #fff;
+    font-size: 18px ;
+
+}
+.main-c .fill .people{
+    width: 535px;
+    height: 40px;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin-bottom:15px ;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.main-c .fill textarea{
+    background-color: #1f1f1f;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.main-c .fill .btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #dd1717;
+    color: #fff;
+    background-color: #dd1717;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}

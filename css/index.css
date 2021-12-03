@@ -1,0 +1,495 @@
+/* 导航栏部分 */
+body{
+    background-color: #000;
+}
+.banner{
+
+    width: 100%;
+    height: 803px;
+    background: url(../img/banner1.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner .arr-l{
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+.banner .arr-r{
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+/* 作品展示部分 */
+.exhibition{
+    width: 100%;
+    height: 1000px;
+    /* background-color: #000; */
+    overflow: hidden;
+}
+.title{
+    width: 550px;
+    height: 167px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 110px;
+    overflow: hidden;
+
+
+}
+.title .en{
+    display: inline-block;
+    height: 24px;
+    color: #dd1717;
+    font-size: 24px;
+    margin: 0 20px;
+
+}
+.title .ch{
+    color: #8c8c8c;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+.row1{
+    background-color: #dd1717;
+    height: 4px;
+    width: 120px;
+    margin-top: -15px;
+    display: inline-block;
+    vertical-align: 4px;
+
+}
+.ex-box{
+    height: 600px;
+    width: 100%;
+    /* background-color: #000;   */
+
+}
+.box-item{
+    /* width: 417px;
+    height: 279px; */
+    float: left;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.block{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0); */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s linear;
+
+}
+.block .block-item{
+    width: 375px;
+    height: 246px;
+    border: 1px solid #dd1717;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    top:23px;
+    left: 23px;
+
+    text-align: center;
+    opacity: 0;
+    transition: all .4s ease;
+}
+.block .block-item .name{
+    color: #dd1717;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 100px;
+}
+.block .block-item .date{
+    font-size: 12px;
+    color: #fffefe;
+    line-height: 30px;
+    /* margin-top: 30px; */
+}
+
+.box-item:hover .block{
+    background-color: rgba(0, 0, 0,0.6);
+}
+.box-item:hover .block-item{
+    transform: scale(0.8);
+    opacity: 1;
+}
+.box-item img{
+    width: 450px;
+    height: 279px;
+}
+.box-item.last{
+    margin-right: 0px;
+}
+
+
+
+
+
+/* view more 部分 */
+.ex-more{
+
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: all .4s ease;
+
+}
+.ex-more a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 45px;
+    line-height: 80px;
+}
+.ex-more:hover{
+    background-color: #dd1717;
+}
+
+
+/* 优惠福利部分 */
+.welfare{
+    width: 100%;
+    height: 1222px;
+    background-color: #000;
+}
+
+.welfare .welfare-box{
+    width: 1222px;
+    height: 900px;
+    margin: 0 auto;
+}
+.welfare .welfare-box img{
+    width: 520px;
+    height: 300px;
+}
+.welfare .welfare-box .box-l{
+    height: 800px;
+    width: 520px;
+    float: left;
+}
+.welfare .welfare-box .box-l .box-l-item1{
+    width: 520px;
+    height: 300px;
+    margin-top: 81px;
+    position: relative;
+}
+.welfare .welfare-box .box-l .box-l-item1:hover .hinder{
+    opacity: 1;
+}
+.welfare .welfare-box .box-l .box-l-item2:hover .hinder{
+    opacity: 1;
+}
+.welfare .welfare-box .box-l .box-l-item1:hover .spot{
+    border-color: #dd1717;
+}
+.welfare .welfare-box .box-l .box-l-item2:hover .spot{
+    border-color: #dd1717;
+}
+.welfare .welfare-box .box-l .box-l-item1 .spot{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #302a2a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -99px;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+    background-color: #000;
+    
+}
+.welfare .welfare-box .box-l .box-l-item2 .spot{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #302a2a;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    right: -99px;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+    
+}
+.welfare .welfare-box .box-l .box-l-item2{
+    width: 520px;
+    height: 300px;
+    margin-top: 88px;
+    position: relative;
+}
+
+.welfare .welfare-box .box-line{
+    float: left;
+    height: 808px;
+    width: 1px;
+    background-color: #302a2a;
+    margin-left: 90px;
+}
+.welfare-box .hinder{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #212121;
+    opacity: 0;
+    transition: all .4s ease;
+
+}
+.welfare-box .hinder .hinder-h{
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 20px;
+}
+.welfare-box .hinder .hinder-m{
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 138px;
+}
+
+
+.welfare .welfare-box .box-r{
+    height: 800px;
+    width: 520px;
+    float: right;
+    margin-left: 50px;
+}
+
+.welfare .welfare-box .box-r .box-r-item1{
+    width: 520px;
+    height: 300px;
+    margin-top: 260px;
+    position: relative;
+}
+.welfare .welfare-box .box-r .box-r-item1:hover .hinder{
+    opacity: 1;
+}
+.welfare .welfare-box .box-r .box-r-item2:hover .hinder{
+    opacity: 1;
+}
+.welfare .welfare-box .box-r .box-r-item1:hover .spot{
+    border-color: #dd1717;
+}
+.welfare .welfare-box .box-r .box-r-item2:hover .spot{
+    border-color: #dd1717;
+}
+.welfare .welfare-box .box-r .box-r-item1 .spot{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #302a2a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -99px;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+    background-color: #000;
+}
+.welfare .welfare-box .box-r .box-r-item2 .spot{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #302a2a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -99px;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+    background-color: #000;
+    
+}
+.welfare .welfare-box .box-r .box-r-item2{
+    width: 520px;
+    height: 300px;
+    margin-top: 88px;
+    position: relative;
+}
+
+/* about部分 */
+.about{
+    width: 100%;
+    height: 544px;
+
+    background: url(../img/about1.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about .block{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about .block .about-image{
+    margin-top: 10px;
+}
+.about .block .about-item{
+    width: 1100px;
+    height: 250px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.about .block .about-item .about-list{
+    width: 205px;
+    height: 150px;
+    border-radius: 20%;
+    float: left;
+    margin-right: 90px;
+    text-align: center;
+    transition: all .4s ease;
+}
+.about .block .about-item .about-list:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 100px 20px #fff;
+}
+.about .block .about-item .about-list img{
+    margin-top: 10px;
+}
+.about .block .about-item .about-list p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    margin-top:28px ;
+}
+.about .block .about-item .about-list.last{
+    margin-right: 0;
+}
+
+/* 流程 */
+.process{
+width: 100%;
+height: 861px;
+
+}
+.process-item{
+    height: 240px;
+    width: 980px;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+.process-item .process-list{
+    height: 240px;
+    width: 170px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+
+
+}
+.process-item .process-list:hover .number{
+    color: #fff;
+    background-color: #dd1717;
+}
+.process-item .process-list:hover .spot{
+  opacity: 1;
+}
+.process-item .process-list:hover .content{
+    border-color: #dd1717;
+}
+.process-item .process-list:hover .content .block1{
+    opacity: 1;
+}
+/* .process-item .process-list .content:hover .block1{
+    opacity: 1;
+    }  */
+.process-item .process-list.last{
+    margin-right: 0;
+}
+.process-item .process-list .number{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    background-color: #4d4d4d;
+    color: #dd1717;
+    margin: 0 auto;
+    line-height: 55px;
+    transition: all .4s ease;
+
+}
+
+.process-item .process-list .spot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #dd1717;
+    margin:  0 auto;
+    margin-top: 20px;
+    opacity: 0;
+    transition: all .4s ease;
+}
+.process-item .process-list .content{
+    height: 120px;
+    width: 170px;
+    border: 1px solid #f6f6f6;
+    position: relative;
+    margin-top:30px ;
+}
+.process-item .process-list .content .sup{
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-top: 20px;
+}
+.process-item .process-list .content .sub{
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    color: #8c8c8c;
+    margin-top: 10px;
+}
+.process-item .process-list .content .block1{
+    width: 170px;
+    height: 15px;
+    background-color: #dd1717;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .4s ease;
+}
+/* 联系我们部分 */
+.process-foot{
+    height: 100px;
+    width: 1500px;
+    /* background-color: red; */
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.foot-list{
+    width: 300px;
+    height: 100px;
+    border-right: 1px solid #4d4d4d;
+    float: left;
+    padding:0px  113px ;
+}
+.foot-list.last{
+    padding-right: 0;
+    border-right: none;
+}
+.foot-list p{
+        color: #8c8c8c;
+        font-size: 14px;
+        line-height: 36px;
+}

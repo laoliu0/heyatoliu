@@ -1,0 +1,231 @@
+
+body{
+    background-color: #161616;
+}
+.banner{
+    width: 100%;
+    height: 478px;
+    background: url(../img/city-nav1.jpg) no-repeat ;
+    background-position: center;
+    background-size: cover;
+}
+
+.main{
+    width: 100%;
+    height: 790px;
+    /* background-color: #161616; */
+}
+.title{
+    width: 550px;
+    height: 167px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 110px;
+    overflow: hidden;
+
+
+}
+.title .en{
+    display: inline-block;
+    height: 24px;
+    color: #dd1717;
+    font-size: 24px;
+    margin: 0 20px;
+
+}
+.title .ch{
+    color: #8c8c8c;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+.row1{
+    background-color: #dd1717;
+    height: 4px;
+    width: 120px;
+    margin-top: -15px;
+    display: inline-block;
+    vertical-align: 4px;
+
+}
+.main-c{
+    width: 1200px;
+    height: 790px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.content{
+    height: 500px;
+    width: 1200px;
+    
+}
+.content-l{
+    height: 500px;
+    width: 170px;
+    float: left;
+}
+
+.content-r{
+    width: 1030px;
+    height: 500px;
+    float: right;
+}
+.content-sup{
+    height: 250px;
+    width: 170px;
+    text-align: center;
+    line-height: 250px;
+
+    background-color: #222;
+    transition: all .4s linear;
+
+
+}
+.content-sup:hover{
+    background-color: #cf1615;
+}
+.content-sub{
+    height: 250px;
+    width: 170px;
+    text-align: center;
+    line-height: 250px;
+
+    background-color: #222;
+    transition: all .4s linear;
+    background-color: #cf1615;
+
+}
+
+.content-sub:hover{
+    background-color: #cf1615;
+}
+.domestic{
+    color: #656565;
+    font-size: 18px;
+}
+.domestic::after{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background: url(../img/city-arr1.png);
+    vertical-align: middle;
+    opacity: 0;
+    margin: 0px 5px;
+    transition: all .4s linear;
+}
+.foreign{
+    font-size: 18px;
+    color: #fff;
+}
+.foreign::after{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background: url(../img/city-arr1.png);
+    vertical-align: middle;
+
+    margin: 0px 5px;
+
+    transform: translateX(5px);
+}
+
+
+.content-sup:hover .domestic{
+    color: #fff;
+}
+.content-sup:hover .domestic::after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+.ex-box{
+    width: 1030px;
+    height: 500px;
+    /* background-color: blue; */
+}
+.ex-box .box-item{
+    width: 257px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+.block{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0); */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s linear;
+
+}
+.block .block-item{
+    width: 150px;
+    height: 325px;
+    border: 1px solid #dd1717;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+    opacity: 0;
+    transition: all .4s ease;
+}
+.block .block-item .name{
+    color: #dd1717;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 100px;
+}
+.block .block-item .date{
+    font-size: 12px;
+    color: #fffefe;
+    line-height: 30px;
+    /* margin-top: 30px; */
+}
+
+.box-item:hover .block{
+    background-color: rgba(0, 0, 0,0.5);
+}
+.box-item:hover .block-item{
+    transform:translate(-50%,-50%) scale(1.2);
+    opacity: 1;
+}
+
+/* 联系我们部分 */
+.contact{
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    overflow: hidden;
+}
+.process-foot{
+    height: 100px;
+    width: 1500px;
+    /* background-color: red; */
+    margin: 50px auto;
+    margin-top: 150px;
+
+}
+.foot-list{
+    width: 300px;
+    height: 100px;
+    border-right: 1px solid #4d4d4d;
+    float: left;
+    padding:0px  113px ;
+}
+.foot-list.last{
+    padding-right: 0;
+    border-right: none;
+}
+.foot-list p{
+        color: #8c8c8c;
+        font-size: 14px;
+        line-height: 36px;
+}

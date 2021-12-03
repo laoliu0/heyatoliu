@@ -1,0 +1,262 @@
+.main{
+    width: 100%;
+    height: 2000px;
+    overflow: hidden;
+    background: url(../img/discount.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    position: relative;
+}
+.main-c{
+    width: 2000px;
+    margin: 0 auto;
+    position: relative;
+}
+.main::before{
+    content: '';
+    width: 100%;
+    height: 1500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.title{
+    width: 550px;
+    height: 167px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+
+
+
+}
+.title .en{
+    display: inline-block;
+    height: 24px;
+    color: #dd1717;
+    font-size: 24px;
+    margin: 0 20px;
+
+}
+.title .ch{
+    color: #8c8c8c;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+.title .desc{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.row1{
+    background-color: #dd1717;
+    height: 4px;
+    width: 120px;
+    margin-top: -15px;
+    display: inline-block;
+    vertical-align: 4px;
+
+}
+
+
+.main .img-list{
+    width: 1080px;
+    height: 1530px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+.main .img-list .img-item{
+    float: left;
+    width: 515px;
+    height: 736px;
+    margin-right: 46px;
+    margin-bottom: 47px;
+    position: relative;
+
+
+
+}
+
+/* 设置hover属性 */
+.main .img-list .img-item:hover .block{
+    background-color: #dd1717;
+}
+.main .img-list .img-item:hover .info{
+
+    background-color: #dd1717;
+    /* opacity: 0.5; */
+}
+.main .img-list .img-item:hover .red{
+    color: #fff;
+}
+.main .img-list .img-item .block{
+    position: absolute;
+     top: 464px;
+     left: 0;
+    width: 515px;
+    height: 75px;
+    text-align: center;
+    background-color: #212121;
+    color: #fff;
+    font-size: 16px;
+    line-height: 75px;
+    transition:all .4s;
+}
+.main .img-list .img-item img{
+    width: 515px;
+    height: 536px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.main .img-list .img-item .info{
+    width: 515px;
+    height: 200px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    transition: all .4s;
+}
+.main .img-list .img-item .info::before{
+    content: '';
+    width: 515px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.05;
+    transition: all .4s;
+}
+.main .img-list .img-item .info .price{
+    margin-top: 50px;
+    font-size: 36px;
+    color: #fff;
+
+}
+.main .img-list .img-item .info .desc{
+    font-size: 14px;
+    color: #fff;
+    line-height: 15px;
+    margin-top: 20px;
+}
+.main .img-list .img-item .info .order{
+    font-size: 14px; 
+    color: #fff;
+    line-height: 15px;
+    margin-top: 30px;
+}
+.info .order .red{
+    color: #dd1717;
+    transition: all .4s;
+}
+
+
+/* 设置右边两个单独的样式 */
+
+.main .img-list .img-item.mr0{
+    margin-right: 0px;
+    position: relative;
+}
+.main .img-list .img-item.mr0 img{
+    width: 515px;
+    height: 536px;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+}
+.main .img-list .img-item.mr0 .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 515px;
+    height: 200px;
+    background-color: transparent;
+}
+.main .img-list .img-item.mr0 .block{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 515px;
+    height: 75px;
+    background-color: #212121;
+}
+/* 鼠标hover时 */
+.main .img-list .img-item.mr0 .info::before{
+    content: '';
+    width: 515px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.05;
+    transition: all .4s;
+}
+.main .img-list .img-item.mr0:hover .info{
+    background-color: #dd1717;
+    opacity: 0.9;
+}
+.main .img-list .img-item.mr0:hover .block{
+    background-color: #dd1717;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer上面的联系我们部分 */
+.contact{
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    overflow: hidden;
+}
+.process-foot{
+    height: 100px;
+    width: 1500px;
+    /* background-color: red; */
+    margin: 50px auto;
+    margin-top: 150px;
+
+}
+.foot-list{
+    width: 300px;
+    height: 100px;
+    border-right: 1px solid #4d4d4d;
+    float: left;
+    padding:0px  113px ;
+}
+.foot-list.last{
+    padding-right: 0;
+    border-right: none;
+}
+.foot-list p{
+        color: #8c8c8c;
+        font-size: 14px;
+        line-height: 36px;
+}

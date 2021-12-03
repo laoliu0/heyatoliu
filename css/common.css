@@ -1,0 +1,88 @@
+/* 头部header部分 */
+.header{
+    width: 100%;
+    height: 77px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header-c{
+    width: 1200px;
+    height: 77px;
+    margin: 0 auto;
+}
+.header-l{
+    float: left;
+    height: 77px;
+    position: relative;
+
+}
+.header-l .header-l1{
+    position: absolute;
+    top: 50%;
+    left:50px ;
+    transform: translateY(-50%);
+}
+.header-l .header-l2{
+    position: absolute;
+    top: 50%;
+    left:100px ;
+    transform: translateY(-50%);
+}
+.header-r{
+    float: right;
+    height: 77px;
+}
+.r-item{
+    float: left;
+    margin-right: 36px;
+    height: 77px;
+    line-height: 77px;
+}
+.r-item a{
+    color:#fff;
+    font-size: 16px;
+    /* height: 16px;
+    line-height: 16px; */
+    transition: all .4s linear;
+}
+
+.line{
+    width: 80%; 
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -10px;
+
+    background-color: #dd1717;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.r-item:hover a{
+    color: #dd1717;
+    /* font-size: 18px; */
+}
+.r-item:hover .line{
+    opacity: 1;
+}
+.r-item.active a{
+    color: #dd1717;
+}
+.r-item.active .line{
+    opacity: 1;
+}
+/* footer底部的位置 */
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #161616;
+    text-align: center;
+}
+.footer p{
+    font-size: 12px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+}

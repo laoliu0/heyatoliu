@@ -1,0 +1,188 @@
+/* footer上面的联系我们部分 */
+.contact{
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    overflow: hidden;
+}
+.process-foot{
+    height: 100px;
+    width: 1500px;
+    /* background-color: red; */
+    margin: 50px auto;
+    margin-top: 150px;
+
+}
+.foot-list{
+    width: 300px;
+    height: 100px;
+    border-right: 1px solid #4d4d4d;
+    float: left;
+    padding:0px  113px ;
+}
+.foot-list.last{
+    padding-right: 0;
+    border-right: none;
+}
+.foot-list p{
+        color: #8c8c8c;
+        font-size: 14px;
+        line-height: 36px;
+}
+
+/* 中间区域的设置 */
+
+.main{
+    width: 100%;
+    height: 1164px;
+    background: url(../img/about\ us1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgba(0,0,0,0.1); */
+    overflow: hidden;
+    position: relative;
+}
+.main::before{
+    content: '';
+    width: 100%;
+    height: 1164px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.title{
+    width: 550px;
+    height: 167px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+
+
+
+}
+.title .en{
+    display: inline-block;
+    height: 24px;
+    color: #dd1717;
+    font-size: 24px;
+    margin: 0 20px;
+
+}
+.title .ch{
+    color: #8c8c8c;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+.row1{
+    background-color: #dd1717;
+    height: 4px;
+    width: 120px;
+    margin-top: -15px;
+    display: inline-block;
+    vertical-align: 4px;
+
+}
+
+.main-c{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+/* 设置about下的第一段文字 */
+.main-c .desc{
+    height: 105px;
+    font-size: 14px ;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 76px;
+    opacity: 0.6;
+}
+.main-c .info{
+    width: 800px;
+    height: fit-content;
+    position: relative;
+    margin-top: 80px;
+
+}
+.main-c .info .clr{
+    clear: both;
+}
+.main-c .info .date{
+    float: left;
+}
+.main-c .info .line{
+    float: left;
+    width: 1px;
+    height: 73px;
+    background-color: #fff;
+    margin: 0px 80px;
+    opacity: 0.3;
+
+}
+.main-c .info .date .num{
+    font-size: 60px;
+    color: #fff;
+    opacity: 0.6;
+}
+.main-c .info .date .num .little{
+    font-size: 16px;
+    color: #fffefe;
+    opacity: 0.4;
+}
+.main-c .info .date .date-ch{
+    font-size: 16px;
+    color: #fffefe;
+    line-height: 16px;
+    opacity: 0.4;
+    text-align: center
+}
+
+/* about页面最后的部分 */
+.content{
+    width: 800px;
+    height: 336px;
+    /* border:3px solid #dd1717 ; */
+    position: relative;
+    margin-top: 100px;
+}
+.content .logo1{
+    position: absolute;
+    top:-25px ;
+    left: 310px;
+}
+
+.content .logo2{
+    position: absolute;
+    top: -25px;
+    left:380px ;
+}
+.content .red-border{
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 787px;
+    height: 336px;
+    transform:scaleX(2.5) scaleY(4);
+}
+.content .about-font{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content .font{
+    position: absolute;
+    left: 120px;
+    top: 40px;
+    width: 614px;
+    height: 225px;
+}
+.content .font p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-indent: 2em;
+}
